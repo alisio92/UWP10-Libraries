@@ -1,4 +1,4 @@
-# Util librarie
+# Util library
 ## DataDevice
 ```
 String applicationName = UMDeviceInfo.ApplicationName;
