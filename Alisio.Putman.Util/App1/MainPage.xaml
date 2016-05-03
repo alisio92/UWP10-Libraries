@@ -1,0 +1,113 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel Margin="10">
+                <TextBlock Text="Internet" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Internet:" Width="200"/>
+                    <TextBlock Name="txbInternet"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Type of connection:" Width="200"/>
+                    <TextBlock Name="txbConnectionType"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="SSID:" Width="200"/>
+                    <TextBlock Name="txbName"/>
+                </StackPanel>
+                <TextBlock Text="Device" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="SystemFamily:" Width="200"/>
+                    <TextBlock Name="txbSystemFamily"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="SystemVersion:" Width="200"/>
+                    <TextBlock Name="txbSystemVersion"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="SystemArchitecture:" Width="200"/>
+                    <TextBlock Name="txbSystemArchitecture"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ApplicationName:" Width="200"/>
+                    <TextBlock Name="txbApplicationName"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ApplicationVersion:" Width="200"/>
+                    <TextBlock Name="txbApplicationVersion"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="DeviceManufacturer:" Width="200"/>
+                    <TextBlock Name="txbDeviceManufacturer"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="DeviceModel:" Width="200"/>
+                    <TextBlock Name="txbDeviceModel"/>
+                </StackPanel>
+                <TextBlock Text="String functions" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Extract from string:" Width="200"/>
+                    <TextBox Name="txtExtract" Width="200" Text="123AB7777CD668888AB888888CD"/>
+                    <TextBox Name="txtExtractStart" Width="200" Text="AB"/>
+                    <TextBox Name="txtExtractEnd" Width="200" Text="CD"/>
+                    <Button Name="btnExtract" Content="Extract" Click="btnExtract_Click"/>
+                </StackPanel>
+                <ListView Name="lstResultExtract"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Check if email" Width="200"/>
+                    <TextBox Width="200" Name="txtEmail" Text="alisio@msn.be"/>
+                    <Button Content="Check" Name="btnCheckString" Click="btnCheckString_Click"/>
+                    <TextBlock Name="txbEmail"/>
+                </StackPanel>
+                <TextBlock Text="Date Time" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Get day of week" Width="200"/>
+                    <TextBlock Name="txbDayOfWeek"/>
+                </StackPanel>
+                <TextBlock Text="Remote Url" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Check if url exist" Width="200"/>
+                    <TextBox Width="200" Name="txtCheckUrl" Text="http://www.google.be"/>
+                    <Button Content="Check" Name="btnCheckUrl" Click="btnCheckUrl_Click"/>
+                    <TextBlock Name="txbCheckUrl"/>
+                </StackPanel>
+                <TextBlock Text="Generic class" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Get value method" Width="200"/>
+                    <TextBlock Text="2 * 3 = "/>
+                    <TextBlock Name="txbValueMethod"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Get field method" Width="200"/>
+                    <TextBlock Name="txbFieldMethod"/>
+                </StackPanel>
+                <TextBlock Text="Get scrollviewer" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Get scollviewer from listview" Width="200"/>
+                    <TextBlock Name="txbScrollviewer"/>
+                </StackPanel>
+                <ListView Name="lstScrollviewer">
+                    <ListViewItem Content="lol"/>
+                </ListView>
+                <TextBlock Text="Image" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Get base64 from image" Width="200"/>
+                    <TextBlock Name="txbBase64"/>
+                </StackPanel>
+                <TextBlock Text="Charms" FontSize="22" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Share sharms" Width="200"/>
+                    <Button Content="InitShare" Name="btnShare" Click="btnShare_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
