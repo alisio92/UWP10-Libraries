@@ -36,7 +36,7 @@ namespace Alisio.Putman.UtilMethods
         /// </summary>
         /// <param name="url">The full url of a page.</param>
         /// <returns><seealso cref="System.Boolean"/></returns>
-        public static async Task<Boolean> RemoteFileExists(string url)
+        public static async Task<Boolean> CheckIfRemoteFileExistsAsync(string url)
         {
             if (url == "")
                 return false;
